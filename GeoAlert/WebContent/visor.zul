@@ -1,0 +1,22 @@
+<zk>
+    <grid apply="edu.udistrital.controller.VisorController">
+        <rows>
+            <row>
+                <label value="Latitud:" />
+                <doublebox id="latitude" hflex="1" />
+            </row>
+            <row>
+                <label value="Longitud:" />
+                <doublebox id="longitude" hflex="1" />
+            </row>
+            <row>
+                <label value="Nivel Zoom:" />
+                <intbox id="zoom" hflex="1" />
+            </row>
+            <row>
+                <label value="Infomación:" />
+                <button id="toggleInfo" label="Toggle Info" hflex="1" />
+            </row>
+        </rows>
+    </grid>
+</zk>

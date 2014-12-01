@@ -1,0 +1,41 @@
+<!-- <?page title="Nueva" contentType="text/html;charset=UTF-8"?> -->
+<!-- <zk> -->
+<!-- <window title="Nueva" border="normal"> -->
+<!-- Hola preciosa -->
+<!-- </window> -->
+<!-- </zk> -->
+<zk>
+	<div apply="edu.udistrital.controller.MapaController"
+		width="100%" height="100%">
+
+		<script type="text/javascript"
+			content="zk.googleAPIkey='AIzaSyAPzZvS9tDSjRPRfIvD7uzDABA3aIMp3sQ'" />
+
+		<gmaps version="3.9" id="gmaps" width="100%" height="80%"
+			showSmallCtrl="true" lat="4.637489225165957" lng="-74.06203803311206">
+		        <ginfo id="info" open="true"
+		            content="Seleccione punto" lat="4.637489225165957" lng="-74.06203803311206"/>
+			<gmarker id="marker" />
+		</gmaps>
+
+	    <grid apply="edu.udistrital.controller.VisorController" width="100%" height="20%">
+	        <rows>
+	            <row>
+	                <label value="Latitud:" />
+	                <doublebox id="latitude" />
+	                <label value="Longitud:" />
+	                <doublebox id="longitude" />
+	            </row>
+	            <row>
+	                <label value="Nivel Zoom:" />
+	                <intbox id="zoom"/>
+	                <label value="Infomación:" />
+	                <button id="obtenerInformacion" label="Obtener"/>
+	            </row>
+	            
+	        </rows>
+	    </grid>
+	
+	</div>	
+	    
+</zk>
